@@ -14,6 +14,10 @@
         .about{
             text-align: center;
         }
+        .red-color{
+            color: #ED0036;
+        }
+
     </style>
 </head>
 <body>
@@ -24,36 +28,38 @@
         <div class="collapse navbar-collapse container" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-danger" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link text-danger" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#faq">FAQ</a>
+                    <a class="nav-link text-danger" href="#faq">FAQ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#sponsors">Sponsors</a>
+                    <a class="nav-link text-danger" href="#sponsors">Sponsors</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
+                    <a class="nav-link text-danger" href="#contact">Contact Us</a>
                 </li>
             </ul>
             <span class="navbar-text">
-                <button type="button" class="btn btn-outline-primary">Register</button>
+                <button type="button" class="btn btn-outline-danger">Register</button>
             </span>
         </div>
     </nav>
     <!-- Hero -->
-    <div class="container jumbotron" id="home">
-        <h1 class="display-3">Hello, world!</h1>
+    <div class="bg-light">
+    <div class="container jumbotron bg-light" id="home">
+        <h1 class="display-3 text-danger">GrayHound</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <hr class="my-4">
         <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <p class="lead">
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            <a class="btn btn-danger btn-lg" href="#" role="button">Register</a>
         </p>
     </div>
+</div>
     
     <!-- about  -->
     <div class="container about" id="about">
@@ -118,7 +124,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
