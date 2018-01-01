@@ -1,4 +1,4 @@
-// Some random colors
+// Some random colors for background
 const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
 
 const numBalls = 50;
@@ -39,3 +39,8 @@ balls.forEach((el, i, ra) => {
     }
   );
 });
+
+//text color changing effect
+const colors_text = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
+
+

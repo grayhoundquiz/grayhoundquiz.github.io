@@ -1,6 +1,64 @@
 * {
     margin: 0;
 }
+
+/* animations */
+  @-webkit-keyframes colorchange {
+    0% {
+      
+      color: #3CC157;
+    }
+    
+    10% {
+      
+      color: #8e44ad;
+    }
+    
+    20% {
+      
+      color: #1abc9c;
+    }
+    
+    30% {
+      
+      color: #d35400;
+    }
+    
+    40% {
+      
+      color: blue;
+    }
+    
+    50% {
+      
+      color: #34495e;
+    }
+    
+    60% {
+      
+      color: #1B1B1B;
+    }
+    
+    70% {
+      
+      color: #2980b9;
+    }
+    80% {
+   
+      color: #f1c40f;
+    }
+    
+    90% {
+   
+      color: #2980b9;
+    }
+    
+    100% {
+      
+      color: pink;
+    }
+  }
+
 .ball {
     position: absolute;
     border-radius: 100%;
@@ -17,7 +75,7 @@
 .aparoksha_logo {
     cursor: pointer;
     position: fixed;
-    margin-left: 116px;
+    margin-left: 7%;
 }
 
 
@@ -39,6 +97,7 @@
     line-height: normal;
     font-size: 26px;
     color: #000000;
+    -webkit-animation:colorchange 20s infinite alternate;
 }
 
 /* nav */
@@ -55,6 +114,17 @@ li{
     list-style: none;
     display: inline;
 }
+
+.underline {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+  }
+.underline:hover {
+    background-size: 100% 88%;
+  }
 
 .black{
     cursor: pointer;
@@ -98,6 +168,9 @@ li{
     align-items: center;
     justify-content: center;
 
+}
+.register:hover{
+    transform: scale(1.04);
 }
 .register-text{
     cursor: pointer;
