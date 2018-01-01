@@ -44,3 +44,58 @@ balls.forEach((el, i, ra) => {
 const colors_text = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];
 
 
+//modal 
+
+var modal_about = document.getElementById('modal_about');
+var modal_faq = document.getElementById('modal_faq');
+var modal_gallery = document.getElementById('modal_gallery');
+
+
+var link_about = document.getElementById("about");
+var link_faq = document.getElementById("faq");
+var link_gallery = document.getElementById("gallery");
+
+
+var span_about = document.getElementsByClassName("close_about")[0];
+var span_faq = document.getElementsByClassName("close_faq")[0];
+var span_gallery = document.getElementsByClassName("close_gallery")[0];
+
+
+// to display
+link_about.onclick = function() {
+    modal_about.style.display = "block";
+}
+link_faq.onclick = function() {
+  modal_faq.style.display = "block";
+}
+link_gallery.onclick = function() {
+  modal_gallery.style.display = "block";
+}
+
+//to close
+span_about.onclick = function() {
+    modal_about.style.display = "none";
+    console.log("clicked close")
+}
+
+span_faq.onclick = function() {
+  modal_faq.style.display = "none";
+}
+
+span_gallery.onclick = function() {
+  modal_gallery.style.display = "none";
+}
+
+
+
+window.onclick = function(event) {
+    if (event.target == modal_about) {
+        modal_about.style.display = "none";
+    }
+    if (event.target == modal_faq) {
+      modal_faq.style.display = "none";
+    }
+    if (event.target == modal_gallery) {
+      modal_gallery.style.display = "none";
+    }
+}
