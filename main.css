@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+}
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: -10;
+    overflow: hidden;
+  }
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aparoksha_logo {
+    cursor: pointer;
+    position: fixed;
+    margin-left: 116px;
+}
+
+
+/* main logo 2 */
+.main_logo{
+    margin-top: 20vh;
+    width: 590px;
+    height: 287px;
+    cursor: pointer;
+    
+}
+
+/* #The flagship quiz event of Aparoksha */
+.tagline{
+    margin-top: 50px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 26px;
+    color: #000000;
+}
+
+/* nav */
+ul{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 400px;
+    max-width: 500px; 
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+.black{
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    /* font-weight: bold; */
+    line-height: normal;
+    font-size: 30px;
+    color: #000000;
+}
+
+.yellow{
+    font-family: Roboto;
+    font-style: normal;
+    /* font-weight: bold; */
+    line-height: normal;
+    font-size: 30px;
+    color: #D67D2D;
+    cursor: pointer;
+}
+
+/* Register */
+
+
+.register{
+    width: 429px;
+    height: 73px;
+    margin-top: 40px;
+    background: #FF5ED3;
+    border-radius: 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.register-text{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
