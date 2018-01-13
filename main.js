@@ -99,3 +99,9 @@ window.onclick = function(event) {
       modal_gallery.style.display = "none";
     }
 }
+
+var notify = document.getElementById("notify")
+
+notify.onclick = function () {
+  notify.style.display = "none";
+}
