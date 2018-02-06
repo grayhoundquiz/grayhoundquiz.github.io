@@ -1,4 +1,2 @@
 # GrayHound-Website
-Website for GrayHound, a flagship quizzing event!
-
-Under Construction!
+Website for GrayHound, a flagship Biz-Tech quizzing event!
