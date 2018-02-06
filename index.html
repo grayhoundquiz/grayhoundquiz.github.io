@@ -1,113 +1,538 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>GrayHound</title>
-  <link rel="stylesheet" type="text/css" href="main.css"/>
-  </head>
-  <body>
-    <div class="aparoksha_logo"><img src="./assets/logo1.png" alt="aparoksha logo"></div>
+<html lang="en">
 
-    <div class = "hero">
-      <div class="main_logo"><img src="./assets/main_logo.png" alt="main_logo"></div>
-      <div class="tagline">
-          <span>#The flagship quiz event of Aparoksha</span>
-      </div>
-      <div class="nav">
-        <ul>
-          <a><li id="about" class="black underline">About</li></a>
-          <!-- about section -->
-          <div id="modal_about" class="modal_about">
-            <div class="modal_content_about">
-              <span class="close_about">&times;</span>
-              <div class="container_about">
-                  <center><h1 class="about_event_title">About The Event</h1></center>
-                  <center><div class="about_event_1">
-                      GrayHound, an illustrious Tech quizzing contest, is a flagship
-                      event of Aparoksha - The Technical cum Entrepreneurship
-                      Fest of IIIT-Allahabad. This event will be conducted across
-                      various cities pan India to hunt for the best quizzer among the
-                      college students.
-                  </div></center>
-                  <center><div class="about_event_2">
-                      The quiz contest will unfold through a preliminary round to be
-                      held both online and offline. The top 30 teams will be selected
-                      and invited to the prestigious campus of IIIT Allahabad for the
-                      final round, that will be hosted under the aegis of acclaimed
-                      quiz masters.
-                  </div></center>
-                  <h2 class="timeline_title">Timeline</h2>
-                  <!-- timeline -->
-                  <div class='container'>
-                      <div class='timeline'>
-                        <div class='start'></div>
-                      </div>
-                      <div class='entries'>
-                        <div class='entry project'>
-                          <div class='dot'></div>
-                          <div class='label'>
-                            <div class='time'>
-                              5 February 2018
-                            </div>
-                            <div class='detail'>
-                              Registration begins
-                            </div>
-                          </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>GrayHound'18</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.ico" />
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/green-theme.css" rel="stylesheet">
+
+    <!-- Main Style -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+
+    <!-- Montserrat for title -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- Body font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!--CSS Spinner-->
+    <div class="spinner-wrapper">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <!-- Start Header -->
+    <header id="mu-hero" class="" role="banner">
+        <!-- Start menu  -->
+        <nav class="navbar navbar-fixed-top navbar-default mu-navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+
+                    <!-- image based logo -->
+                    <a class="mu-logo" href="#"><img src="assets/images/web_logop1.png" alt="logo img"></a>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav mu-menu navbar-right">
+                        <li><a href="#mu-hero">Home</a></li>
+                        <li><a href="#mu-about">About</a></li>
+                        <li><a href="#mu-schedule">Timeline</a></li>
+                        <li><a href="#mu-register">Register</a></li>
+                        <li><a href="#mu-faq">FAQ</a></li>
+                        <li><a href="#mu-sponsors">Sponsors</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- End menu -->
+
+        <div class="mu-hero-overlay">
+            <div class="container">
+                <div class="mu-hero-area">
+
+                    <!-- Start hero featured area -->
+                    <div class="mu-hero-featured-area">
+                        <!-- Start center Logo -->
+                        <div class="mu-logo-area">
+
+                            <!-- image based logo -->
+                            <a class="mu-logo" href="index.html"><img src="assets/images/web_logop.png" alt="logo img"></a>
                         </div>
-                        <div class='entry study'>
-                          <div class='dot'></div>
-                          <div class='label'>
-                            <div class='time'>
-                              18 Febuary 2018
+                        <!-- End center Logo -->
+
+                        <div class="mu-hero-featured-content">
+
+                            <h2><a href="https://www.aparoksha.org"target="_blank" style="text-decoration : underline">Aparoksha, IIIT Allahabad </a> presents GrayHound, an All India Biz-Tech Quiz</h2>
+
+                            <p class="mu-event-date-line">16 - 17 March, 2018 | IIIT Allahabad</p>
+                            <ul class="nav  mu-schedule-menu ">
+                                <li style="background-color :white"><a href="#mu-register">Apply</a></li>
+                                <li style="background-color :white"><a href="https://www.facebook.com/grayhoundquiz/" target="_blank">Chat With Us</a></li>
+                            </ul>
+
+
+                            <div class="mu-event-counter-area">
+                                <div id="mu-event-counter">
+
+                                </div>
                             </div>
-                            <div class='detail'>
-                              1st Round (online)
-                            </div>
-                          </div>
+
                         </div>
-                        <div class='entry project'>
-                          <div class='dot'></div>
-                          <div class='label'>
-                            <div class='time'>
-                              17 March 2018
-                            </div>
-                            <div class='detail'>
-                              Final Round onsite (IIIT-A)
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                    <!-- timeline -->
-              </div>
-            </div>
-          </div>
+                    <!-- End hero featured area -->
 
-          <!-- <a><li id="faq" class="yellow underline">Faq</li></a>-->
-          <!-- faq section 
-          <div id="modal_faq" class="modal_faq">
-            <div class="modal_content_faq">
-              <span class="close_faq">&times;</span>
-              <p>Some faq here..</p>
-              <h1>add content here</h1>
+                </div>
             </div>
-          </div>
-          <a><li id = "gallery" class="black underline">Gallery</li></a>
--->
+        </div>
+    </header>
+    <!-- End Header -->
 
-          <!-- gallery section 
-          <div id="modal_gallery" class="modal_gallery">
-            <div class="modal_content_gallery">
-              <span class="close_gallery">&times;</span>
-              <p>Some gallery here..</p>
-              <h1>add content here</h1>
+    <!-- Start main content -->
+    <main role="main">
+        <!-- Start About -->
+        <section id="mu-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-about-area">
+                            <!-- Start Feature Content -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mu-about-left">
+                                        <img class="" src="assets/images/about.png" alt="Men Speaker">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="mu-about-right">
+                                        <h2>About GrayHound</h2>
+                                        <p>GrayHound, an illustrious Biz-Tech quizzing contest, is a flagship event of Aparoksha - The Technical Fest of IIIT-Allahabad. This event will be conducted across various cities pan India to hunt for the best quizzer
+                                            among the college students.</p>
+
+                                        <p>The quiz contest will unfold through a preliminary round to be held both online and offline. The top 30 teams will be selected and invited to the prestigious campus of IIIT Allahabad for the final round, that will
+                                            be hosted under the aegis of acclaimed quiz masters.
+                                        </p>
+
+                                        <p>One of the best quizzing event you will ever experience!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Feature Content -->
+
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
--->
-        </ul>
-      </div>
-      <div class="register"><a class="register-text">Registrations to be open soon!</a></div>
-      <a id = "notify" href="https://www.facebook.com/grayhoundquiz/" target="_blank"><div class="notify" >&times Check us on Facebook!</div></a>
-   
-    <script src="main.js"></script>
-  </body>
+        </section>
+        <!-- End About -->
+
+        <!-- Start Video -->
+        <!-- <section id="mu-video">
+            <div class="mu-video-overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mu-video-area">
+                                <h2>Watch Previous Event Video</h2>
+                                <a class="mu-video-play-btn" href="#"><i class="fa fa-play" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+        <!-- Start Video content -->
+        <!-- <div class="mu-video-content">
+                <div class="mu-video-iframe-area">
+                    <a class="mu-video-close-btn" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    <iframe width="854" height="480" src="https://www.youtube.com/embed/n9AVEl9764s" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div> -->
+        <!-- End Video content -->
+
+        </section>
+        <!-- End Video -->
+
+        <!-- Start Schedule  -->
+        <section id="mu-schedule">
+            <div class="container">
+                <div class="row">
+                    <div class="colo-md-12">
+                        <div class="mu-schedule-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Timeline</h2>
+                            </div>
+
+                            <div class="mu-schedule-content-area">
+
+                                <!-- Tab panes -->
+                                <div class="tab-content mu-schedule-content">
+                                    <div role="tabpanel" class="tab-pane fade mu-event-timeline in active" id="first-day">
+                                        <ul>
+                                            <li>
+                                                <div class="mu-single-event">
+                                                    <h3 class="mu-event-time" style="font-family: Montserrat">7th February, 2018</h3>
+                                                    <h4>Registrations for Online Round starts!</h4>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+
+                                                    <h2 class="mu-event-time" style="font-family: Montserrat">17th February, 2018</h2>
+                                                    <h3>Registrations close</h3>
+
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+
+                                                    <h2 class="mu-event-time" style="font-family: Montserrat">19th February, 2018</h2>
+                                                    <h3>Online Round on <a href="https://dare2compete.com/" target="_blank" style="text-decoration : underline">Dare2Compete</a></h3>
+                                                    <span>Top 30 teams are invited to the next round, to be held at IIIT Allahabad</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="mu-single-event">
+
+                                                    <h2 class="mu-event-time" style="font-family: Montserrat">17th March, 2018</h2>
+                                                    <h3>Grand Finale at IIIT Allahabad!</h3>
+                                                    <!--<span>By Ned Stark</span>-->
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Schedule -->
+
+        <!-- Start Venue -->
+        <section id="mu-venue">
+            <div class="mu-venue-area">
+                <div class="row">
+
+                    <div class="col-md-6">
+                        <div class="mu-venue-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14413.426409574698!2d81.76446806977539!3d25.426338850000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acac768944451%3A0x1f0c03a031f74c3f!2sIndian+Institute+of+Information+Technology+Allahabad!5e0!3m2!1sen!2sin!4v1517849185925"
+                                width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="mu-venue-address">
+                            <h2>VENUE <i class="fa fa-chevron-right" aria-hidden="true"></i></h2>
+                            <h3>IIIT Allahabad</h3>
+                            <h4>Uttar Pradesh, India</h4>
+                            <p><b>Indian Institute of Information Technology</b> was established in 1999, as a center of excellence in Information Technology and allied areas. Institute was conferred the Deemed University status by Govt. of India in the
+                                year 2000.
+                            </p>
+                            <p>Ranked 226 in Asia by the QS World University Rankings of 2018, it is funded by the Ministry of Human Resource Development of India and is classed as Institute of National Importance!</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Venue -->
+        <!-- Start Register  -->
+        <section id="mu-register">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-register-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Registration Form</h2>
+                                <h3 style="color:white">The first part of Registration is to be done via <a href="https://www.dare2compete.com" target="_blank" style="color:white; text-decoration : underline">Dare2Compete</a>. After you have registered via Dare2Compete, fill
+                                    out this form to complete your registration.
+                                </h3>
+                            </div>
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeIbgvuYgo3AhIWQjuGuhXtUW-fb8IyXx4gTkD5wG4VNgmYig/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Register -->
+
+        <!-- Start FAQ -->
+        <section id="mu-faq">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-faq-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">FAQ</h2>
+
+                            </div>
+
+                            <div class="mu-faq-content">
+
+                                <div class="panel-group" id="accordion">
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true">
+                                                    <span class="fa fa-angle-down"></span> Who can participate?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                Unless you are an alien, you can participate in GrayHound.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                    <span class="fa fa-angle-up"></span> Do we participate as a team or lonewolves?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Contestants can participate in teams consisting of two members. Although lonewolves(single member) are welcome too.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                    <span class="fa fa-angle-up"></span> Is there a prize money in the online round?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Yes, their is prize money in online round too.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                                    <span class="fa fa-angle-up"></span> Is there a registration fee?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Yes, there is a registration fee of <i class="fas fa-rupee-sign"></i> 100 per team.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                                    <span class="fa fa-angle-up"></span> My question is not answered here. How do I clear my doubt?
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse">
+                                            <div class="panel-body">
+                                                Head on to <a href="https://wwww.facebook.com/grayhoundquiz" target="_blank" style="text-decoration : underline">Facebook</a> or <a href="https://www.twitter.com/grayhoundquiz" target="_blank" style="text-decoration : underline">Twitter</a>                                                or <a href="mailto:grayhoundquiz@gmail.com" target="_blank" style="text-decoration : underline">mail</a> us your questions instead!
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End FAQ -->
+
+        <!-- Start Sponsors -->
+        <section id="mu-sponsors">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mu-sponsors-area">
+
+                            <div class="mu-title-area">
+                                <h2 class="mu-title">Sponsors</h2>
+
+                            </div>
+
+                            <!-- Start spnonsors brand logo -->
+                            <div class="mu-sponsors-content">
+                                <div class="row">
+
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+
+                                        <h3 class="mu-title" style="text-align: center">Platform Partner</h3>
+
+                                        <div class="mu-sponsors-single">
+
+                                            <a href="https://dare2compete.com/" target="_blank"> <img src="assets/images/d2c_logo_500.png" alt="Brand Logo"></a>
+
+                                        </div>
+                                        <h4 style="text-align: center">Wish to sponsor us? Please see our <a href="http://bit.ly/2FNO9hO" target="_blank" style="text-decoration : underline"> sponsorship brochure</a> for more details</h4>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-4 col-xs-4">
+                                        <div class="mu-sponsors-single">
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- End spnonsors brand logo -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Sponsors -->
+
+    </main>
+
+    <!-- End main content -->
+
+
+    <!-- Start footer -->
+    <footer id="mu-footer" role="contentinfo">
+        <div class="container">
+            <div class="mu-footer-area">
+                <div class="mu-footer-top">
+                    <div class="mu-social-media">
+                        <a href="https://www.facebook.com/grayhoundquiz/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.github.com/grayhoundquiz/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://twitter.com/grayhoundquiz" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/grayhoundquiz/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:grayhoundquiz@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+
+                    </div>
+                </div>
+                <div class="mu-footer-bottom">
+                    <p class="mu-copy-right">&copy;2018 <a rel="nofollow" href="index.html">GrayHound</a> | All trademarks and logos are the property of their respective owners</p>
+                    <p> Made with <i class="fa fa-heart" aria-hidden="true"></i> by Team GrayHound</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End footer -->
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Slick slider -->
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <!-- Event Counter -->
+    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+
+    <!-- Custom js -->
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+
+    <!-- Preloader -->
+    <script>
+        $(document).ready(function() {
+            //Preloader
+            $(window).load(function() {
+                preloaderFadeOutTime = 700;
+
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
+        });
+    </script>
+
+
+</body>
+
 </html>

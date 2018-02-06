@@ -1,3 +1,4 @@
-# grayhoundquiz.org
-Website for the event
-<a href="https://grayhoundquiz.github.io/">Live Preview W.I.P</a>
+# GrayHound-Website
+Website for GrayHound, a flagship quizzing event!
+
+Under Construction!
